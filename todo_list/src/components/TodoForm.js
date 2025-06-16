@@ -5,7 +5,7 @@ export const TodoForm = () => {
 
     const handleSubmit = e => {
         e.prevetDeafault();
-        console.log(value)
+        console.log(value);
     }
 
     return (
