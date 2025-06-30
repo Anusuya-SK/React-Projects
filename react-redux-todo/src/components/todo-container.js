@@ -43,6 +43,8 @@ export default function TodoContainer() {
                     {prioritisedTodos.map((todo) => {
                         if(!todo.completed) {
                             return <TodoItem {...todo} />
+                        } else {
+                            return null;
                         }
                     })}
                 </List>
@@ -54,6 +56,8 @@ export default function TodoContainer() {
                     {prioritisedTodos.map((todo) => {
                         if(todo.completed) {
                             return <TodoItem {...todo} />
+                        } else {
+                            return null;
                         }
                     })}
                 </List>

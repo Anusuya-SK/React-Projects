@@ -3,6 +3,10 @@ import { ADD_TODO, TOGGLE_COMPLETED, DELETE_TODO, TOGGLE_IMPORTANT } from "./act
 
 import shortid from "shortid";
 
+function saveStateToBrowser(state) {
+    window.localStorage.setItem("react-redux-todo", JSON.stringify(state));
+}
+
 function reducer(state = initialState, action) {
     switch(action.type) {
         case ADD_TODO: {
@@ -20,6 +24,7 @@ function reducer(state = initialState, action) {
                     }
                 ]
             }
+            saveStateToBrowser(newState);
             return newState;
         }
         case TOGGLE_COMPLETED: {
@@ -33,6 +38,7 @@ function reducer(state = initialState, action) {
                 ...state,
                 todos: newTodos,
             }
+            saveStateToBrowser(newState);
             return newState;
         }
         case DELETE_TODO: {
@@ -42,6 +48,7 @@ function reducer(state = initialState, action) {
                 ...state,
                 todos: newTodos,
             }
+            saveStateToBrowser(newState);
             return newState;
         }
         case TOGGLE_IMPORTANT: {
@@ -55,6 +62,7 @@ function reducer(state = initialState, action) {
                 ...state,
                 todos: newTodos,
             }
+            saveStateToBrowser(newState);
             return newState;
         }
     default:

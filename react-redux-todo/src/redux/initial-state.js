@@ -1,4 +1,4 @@
-export const initialState = {
+export const initialState = JSON.parse(window.localStorage.getItem("react-redux-todo")) || {
   todos: [
     {
       id: 0,
