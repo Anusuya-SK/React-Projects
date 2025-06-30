@@ -13,4 +13,9 @@ const ReduxApp = () => {
   )
 }
 
-ReactDOM.render(<ReduxApp />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ReduxApp />
+  </React.StrictMode>
+);
