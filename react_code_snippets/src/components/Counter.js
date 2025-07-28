@@ -11,9 +11,11 @@ function Counter() {
     }
   return (
     <div>
-        <h2>{count}</h2>
+        <h2>Counter Project</h2>
+        <h3>{count}</h3>
         <button onClick={handleIncrement}>+</button>
         <button onClick={handleDecrement}>-</button>
+        <hr />
     </div>
   )
 }
