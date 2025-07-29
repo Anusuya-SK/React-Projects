@@ -5,15 +5,17 @@ import FormSubmission from './components/FormSubmission';
 import ToggleDiv from './components/ToggleDiv';
 import HighligtListItem from './components/HighligtListItem';
 import Parent1 from './components/Parent1';
+import Todo from './components/todoComponents/Todo';
 
 function App() {
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
-      <Parent1 />
+      <Parent1 /> */}
+      <Todo />
     </div>
   );
 }
