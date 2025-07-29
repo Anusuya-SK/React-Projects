@@ -10,11 +10,11 @@ import Todo from './components/todoComponents/Todo';
 function App() {
   return (
     <div>
-      {/* <Counter />
+      <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
-      <Parent1 /> */}
+      <Parent1 />
       <Todo />
     </div>
   );
