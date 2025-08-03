@@ -8,6 +8,7 @@ import Parent1 from './components/Parent1';
 import Todo from './components/todoComponents/Todo';
 import ModalParent from './components/modal/ModalParent';
 import Button from './components/Button';
+import SearchFilter from './components/SearchFilter';
 
 function App() {
   const showAlert = () => {
@@ -15,14 +16,15 @@ function App() {
   }
   return (
     <div>
-      {/* <ModalParent />
       <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
       <Parent1 />
-      <Todo /> */}
+      <Todo />
+      <ModalParent />
       <Button label="Submit Me" style={{color: "#000"}} action={showAlert} />
+      <SearchFilter />
     </div>
   );
 }

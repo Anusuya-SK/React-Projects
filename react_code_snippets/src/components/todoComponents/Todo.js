@@ -32,6 +32,7 @@ function Todo() {
           )
         })}
       </ul>
+      <hr />
     </div>
   )
 }

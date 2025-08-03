@@ -5,13 +5,14 @@ function ModalParent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div style={{ padding: "40px" }}>
+    <div>
       <button onClick={() => setIsModalOpen(true)}>Open Modal</button>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <h2>Modal Title</h2>
         <p>This is a simple modal popup!</p>
       </Modal>
+      <hr />
     </div>
   );
 }

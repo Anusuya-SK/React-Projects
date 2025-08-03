@@ -7,6 +7,7 @@ function Button({ label, style, action }) {
         <StyledButton onClick={action} style={style}>
             {label}
         </StyledButton>
+        <hr />
     </div>
   )
 }
