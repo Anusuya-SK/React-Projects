@@ -16,14 +16,14 @@ function App() {
   }
   return (
     <div>
-      {/* <Counter />
+      <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
       <Parent1 />
       <Todo />
       <ModalParent />
-      <Button label="Submit Me" style={{color: "#000"}} action={showAlert} /> */}
+      <Button label="Submit Me" style={{color: "#000"}} action={showAlert} />
       <SearchFilter />
     </div>
   );

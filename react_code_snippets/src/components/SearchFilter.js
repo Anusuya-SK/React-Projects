@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 
-const data = ['Apple', 'Banana', 'Cherry', 'Grapes', 'Orange', 'Pineapple', 'Strawberry', 'Watermelon'];
+const data = ['Apple', 123, 'Banana', 12, 'Cherry', 'Grapes', 72345, 'Orange', 'Pineapple', 892043, 'Strawberry', 'Watermelon'];
 
 function SearchFilter() {
     const[query, setQuery] = useState("");
 
     // Filter items based on query (case-insensitive)
     const filteredlist = data.filter(item => 
-        item.toLowerCase().includes(query.toLowerCase())
+        //Only strings in the array
+        //item.toLowerCase().includes(query.toLowerCase())
+        //If strings and numbers in the array
+        item.toString().toLowerCase().includes(query.toLowerCase())
     );
 
   return (
