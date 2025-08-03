@@ -6,10 +6,12 @@ import ToggleDiv from './components/ToggleDiv';
 import HighligtListItem from './components/HighligtListItem';
 import Parent1 from './components/Parent1';
 import Todo from './components/todoComponents/Todo';
+import ModalParent from './components/modal/ModalParent';
 
 function App() {
   return (
     <div>
+      <ModalParent />
       <Counter />
       <FormSubmission />
       <ToggleDiv />
