@@ -9,6 +9,7 @@ import Todo from './components/todoComponents/Todo';
 import ModalParent from './components/modal/ModalParent';
 import Button from './components/Button';
 import SearchFilter from './components/SearchFilter';
+import FormPersistence from './components/FormPersistence';
 
 function App() {
   const showAlert = () => {
@@ -16,7 +17,7 @@ function App() {
   }
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
@@ -24,7 +25,8 @@ function App() {
       <Todo />
       <ModalParent />
       <Button label="Submit Me" style={{color: "#000"}} action={showAlert} />
-      <SearchFilter />
+      <SearchFilter /> */}
+      <FormPersistence />
     </div>
   );
 }
