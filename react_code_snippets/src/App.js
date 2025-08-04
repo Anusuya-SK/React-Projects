@@ -17,7 +17,7 @@ function App() {
   }
   return (
     <div>
-      {/* <Counter />
+      <Counter />
       <FormSubmission />
       <ToggleDiv />
       <HighligtListItem />
@@ -25,7 +25,7 @@ function App() {
       <Todo />
       <ModalParent />
       <Button label="Submit Me" style={{color: "#000"}} action={showAlert} />
-      <SearchFilter /> */}
+      <SearchFilter />
       <FormPersistence />
     </div>
   );
