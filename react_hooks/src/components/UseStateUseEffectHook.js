@@ -1,35 +1,38 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import ThemeContext from './ThemeContext';
 
 function UseStateUseEffectHook() {
-    const[count, setCount] = useState(0);
+  const theme = useContext(ThemeContext);
+  const[count, setCount] = useState(0);
 
-    useEffect(() => {
-      if(count >= 50) return;
+  useEffect(() => {
+    if(count >= 50) return;
 
-      const timeout = setTimeout(() => {
-        //console.log("set");
-        setCount(prev => prev + 1);
-      }, 1000);
+    const timeout = setTimeout(() => {
+      //console.log("set");
+      setCount(prev => prev + 1);
+    }, 1000);
 
-      return() => {
-        //console.log("clear");
-        clearTimeout(timeout) //cleanup
-      }
-    },[count]); // Dependency array
+    return() => {
+      //console.log("clear");
+      clearTimeout(timeout) //cleanup
+    }
+  },[count]); // Dependency array
 
-    // useEffect(() => {
-    //   if (count >= 50) return; // Stop when count reaches 50
+  // useEffect(() => {
+  //   if (count >= 50) return; // Stop when count reaches 50
 
-    //   const interval = setInterval(() => {
-    //     setCount(prev => prev + 1);
-    //   }, 100); // Change speed here (ms)
+  //   const interval = setInterval(() => {
+  //     setCount(prev => prev + 1);
+  //   }, 100); // Change speed here (ms)
 
-    //   return () => clearInterval(interval); // Cleanup
-    // }, [count]);
+  //   return () => clearInterval(interval); // Cleanup
+  // }, [count]);
 
   return (
     <div>
-        <p style={{color: "#fff"}}>Count: {count}</p>
+        <p>Count: {count}</p>
+        <p>Current Theme is {theme}</p>
     </div>
   )
 }
