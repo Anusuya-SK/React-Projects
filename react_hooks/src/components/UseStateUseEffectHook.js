@@ -29,7 +29,7 @@ function UseStateUseEffectHook() {
 
   return (
     <div>
-        <p>Count: {count}</p>
+        <p style={{color: "#fff"}}>Count: {count}</p>
     </div>
   )
 }
