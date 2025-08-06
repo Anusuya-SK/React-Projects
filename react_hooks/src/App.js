@@ -1,10 +1,10 @@
 import React from 'react';
-import UseStateHook from './components/UseStateHook';
+import  UseStateUseEffectHook from './components/UseStateUseEffectHook';
 
 function App() {
   return (
     <div className="App">
-      <UseStateHook />
+      < UseStateUseEffectHook />
     </div>
   );
 }
