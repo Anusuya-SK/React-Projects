@@ -8,7 +8,7 @@
 // | `useState`            | Add state to function components                                 |
 // | `useEffect`           | Run side effects (like API calls, subscriptions, etc.)           |
 // | `useContext`          | Access React Context API                                         |
-// | `useRef`              | Reference DOM elements or persist mutable values across renders  |
+// | `useRef`              | Access DOM elements directly or persist mutable values across renders  |
 // | `useMemo`             | Optimize performance by memoizing expensive computations         |
 // | `useCallback`         | Memoize functions to prevent unnecessary re-renders              |
 // | `useReducer`          | An alternative to `useState` for complex state logic             |

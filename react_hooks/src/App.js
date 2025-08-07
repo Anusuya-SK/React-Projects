@@ -6,12 +6,23 @@ import './App.css'; // Import the CSS
 function App() {
   const[theme, setTheme] = useState('dark');
   const isDark = theme === 'dark';
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  const themeChange = {
+    theme,
+    toggleTheme,
+  };
+
   return (
     <div className={`app-container ${theme}`}>
-      <ThemeContext.Provider value={theme}>
+      <button onClick={() => setTheme(isDark ? 'light' : 'dark')}>Switch to {isDark ? 'Light' : 'Dark'} Mode</button>
+      {/* If value={theme} pass the single value */}
+      <ThemeContext.Provider value={themeChange}> 
         <UseStateUseEffectHook />
       </ThemeContext.Provider>
-      <button onClick={() => setTheme(isDark ? 'light' : 'dark')}>Switch to {isDark ? 'Light' : 'Dark'} Mode</button>
     </div>
   );
 }

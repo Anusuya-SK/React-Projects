@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import ThemeContext from './ThemeContext';
 
 function UseStateUseEffectHook() {
-  const theme = useContext(ThemeContext);
+  //const theme = useContext(ThemeContext); // single value
+  const { theme, toggleTheme } = useContext(ThemeContext); // object
   const[count, setCount] = useState(0);
 
   useEffect(() => {
@@ -33,6 +34,8 @@ function UseStateUseEffectHook() {
     <div>
         <p>Count: {count}</p>
         <p>Current Theme is {theme}</p>
+        <p>Newly changed theme: {theme}</p>
+        <button onClick={toggleTheme}>One more button to theme</button>
     </div>
   )
 }
