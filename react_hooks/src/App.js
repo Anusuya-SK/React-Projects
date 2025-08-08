@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ThemeContext from './components/ThemeContext';
 import  UseStateUseEffectHook from './components/UseStateUseEffectHook';
 import './App.css'; // Import the CSS
+import UseRefHook from './components/UseRefHook';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -22,6 +23,8 @@ function App() {
       {/* If value={theme} pass the single value */}
       <ThemeContext.Provider value={themeChange}> 
         <UseStateUseEffectHook />
+        <hr />
+        <UseRefHook />
       </ThemeContext.Provider>
     </div>
   );
