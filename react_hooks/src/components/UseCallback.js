@@ -1,5 +1,6 @@
 import React, { useState, useCallback, memo } from "react";
 
+// In React, memo is a higher-order component (HOC) that helps you skip re-rendering a component if its props haven’t changed.
 const Counter = memo(function Counter({ onIncrement }) {
     console.log("Child renderd");
     return <button onClick={onIncrement}>Increment</button>
