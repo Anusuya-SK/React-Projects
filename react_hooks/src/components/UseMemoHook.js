@@ -4,7 +4,7 @@ function UseMemoHook() {
   const [filter, setFilter] = useState("");
 
   // Sample data
-  const numbers = Array.from({ length: 100 }, (_, i) => i + 1);
+  const numbers = Array.from({ length: 10 }, (_, i) => i + 1);
 
   const filteredNumbers = useMemo(() => {
     console.log("Filtering...");

@@ -4,6 +4,7 @@ import  UseStateUseEffectHook from './components/UseStateUseEffectHook';
 import './App.css'; // Import the CSS
 import UseRefHook from './components/UseRefHook';
 import UseMemoHook from './components/UseMemoHook';
+import UseCallback from './components/UseCallback';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -28,6 +29,8 @@ function App() {
         <UseRefHook />
         <hr />
         <UseMemoHook />
+        <hr />
+        <UseCallback />
       </ThemeContext.Provider>
     </div>
   );
