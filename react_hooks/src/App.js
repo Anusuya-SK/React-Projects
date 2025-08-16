@@ -6,6 +6,7 @@ import UseRefHook from './components/UseRefHook';
 import UseMemoHook from './components/UseMemoHook';
 import UseCallback from './components/UseCallback';
 import UseReducerHook from './components/UseReducerHook';
+import ReducerFormState from './components/ReducerFormState';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -34,6 +35,8 @@ function App() {
         <UseCallback />
         <hr />
         <UseReducerHook />
+        <hr />
+        <ReducerFormState />
       </ThemeContext.Provider>
     </div>
   );
