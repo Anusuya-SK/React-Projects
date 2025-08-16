@@ -20,7 +20,8 @@ function UseReducerHook() {
 
   return (
     <div className="p-4">
-      <h1>Count: {state.count}</h1>
+      <h2>useReducer Hook</h2>
+      <p>Count: {state.count}</p>
       <button onClick={() => dispatch({ type: "increment" })}>+</button>
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
       <button onClick={() => dispatch({ type: "reset" })}>Reset</button>

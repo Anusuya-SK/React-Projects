@@ -13,6 +13,7 @@ function UseCallback() {
     }, []); // dependencies array
   return (
     <>
+    <h2>useCallback Hook</h2>
     <p>Count: {count}</p>
     <Counter onIncrement={increase} />
     </>

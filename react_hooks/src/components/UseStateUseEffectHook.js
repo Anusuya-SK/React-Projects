@@ -32,6 +32,7 @@ function UseStateUseEffectHook() {
 
   return (
     <div>
+        <h2>useState & UseEffect Hook</h2>
         <p>Count: {count}</p>
         <p>Current Theme is {theme}</p>
         <p>Newly changed theme: {theme}</p>

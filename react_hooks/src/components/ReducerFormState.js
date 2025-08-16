@@ -21,6 +21,7 @@ function ReducerFormState() {
 
   return (
     <form>
+      <h2>useReducer Hook for form state management</h2>
       <input
         name="name"
         value={state.name}

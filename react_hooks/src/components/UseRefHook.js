@@ -18,10 +18,12 @@ function UseRefHook() {
 
   return (
     <div>
+      <h2>useRef Hook</h2>
       <p>Current: {count}</p>
       <p>Previous: {prevCount.current}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
       <hr />
+      <h2>useRef Hook</h2>
       <input ref={inputRef} placeholder="Type something..." />
       <button onClick={focusInput}>Focus Input</button>
     </div>
