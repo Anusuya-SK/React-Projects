@@ -8,6 +8,7 @@ import UseCallback from './components/UseCallback';
 import UseReducerHook from './components/UseReducerHook';
 import ReducerFormState from './components/ReducerFormState';
 import UseLayoutEffectHook from './components/UseLayoutEffectHook';
+import UseImperativeHandle from './components/UseImperativeHandle';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -40,6 +41,8 @@ function App() {
         <ReducerFormState /> */}
         <hr />
         <UseLayoutEffectHook />
+        <hr />
+        <UseImperativeHandle />
       </ThemeContext.Provider>
     </div>
   );
