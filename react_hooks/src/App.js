@@ -7,6 +7,7 @@ import UseMemoHook from './components/UseMemoHook';
 import UseCallback from './components/UseCallback';
 import UseReducerHook from './components/UseReducerHook';
 import ReducerFormState from './components/ReducerFormState';
+import UseLayoutEffectHook from './components/UseLayoutEffectHook';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -26,7 +27,7 @@ function App() {
       <button onClick={() => setTheme(isDark ? 'light' : 'dark')}>Switch to {isDark ? 'Light' : 'Dark'} Mode</button>
       {/* If value={theme} pass the single value */}
       <ThemeContext.Provider value={themeChange}> 
-        <UseStateUseEffectHook />
+        {/* <UseStateUseEffectHook />
         <hr />
         <UseRefHook />
         <hr />
@@ -36,7 +37,9 @@ function App() {
         <hr />
         <UseReducerHook />
         <hr />
-        <ReducerFormState />
+        <ReducerFormState /> */}
+        <hr />
+        <UseLayoutEffectHook />
       </ThemeContext.Provider>
     </div>
   );
