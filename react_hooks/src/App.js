@@ -9,6 +9,7 @@ import UseReducerHook from './components/UseReducerHook';
 import ReducerFormState from './components/ReducerFormState';
 import UseLayoutEffectHook from './components/UseLayoutEffectHook';
 import UseImperativeHandle from './components/UseImperativeHandle';
+import UseImperativeModal from './components/UseImperativeModal';
 
 function App() {
   const[theme, setTheme] = useState('dark');
@@ -43,6 +44,8 @@ function App() {
         <UseLayoutEffectHook />
         <hr />
         <UseImperativeHandle />
+        <hr />
+        <UseImperativeModal />
       </ThemeContext.Provider>
     </div>
   );
