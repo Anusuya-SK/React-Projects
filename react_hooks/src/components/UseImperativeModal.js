@@ -24,6 +24,7 @@ function UseImperativeModal() {
 
   return (
     <div>
+      <h2>UseImperativeHandle Hook</h2>
         <button onClick={() => modalRef.current.open()}>Open Modal</button>
         <Modal ref={modalRef} />
     </div>

@@ -21,6 +21,7 @@ function UseImperativeHandle() {
     const inputRef = useRef();
   return (
     <div>
+      <h2>UseImperativeHandle Hook</h2>
       <CustomInput ref={inputRef} />
       <button onClick={() => inputRef.current.focus()}>Focus</button>
       <button onClick={() => inputRef.current.clear()}>Clear</button>

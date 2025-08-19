@@ -23,6 +23,7 @@ function UseLayoutEffectHook() {
     //     ))}
     // </div>
     <div>
+      <h2>useLayoutEffect Hook</h2>
       <div ref={boxRef} style={{ width: "1000px", height: "50px", background: "lightblue" }}>
         Resize me!
       </div>
