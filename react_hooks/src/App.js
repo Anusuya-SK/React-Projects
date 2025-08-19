@@ -30,7 +30,7 @@ function App() {
       <button onClick={() => setTheme(isDark ? 'light' : 'dark')}>Switch to {isDark ? 'Light' : 'Dark'} Mode</button>
       {/* If value={theme} pass the single value */}
       <ThemeContext.Provider value={themeChange}> 
-        {/* <UseStateUseEffectHook />
+        <UseStateUseEffectHook />
         <hr />
         <UseRefHook />
         <hr />
@@ -40,7 +40,7 @@ function App() {
         <hr />
         <UseReducerHook />
         <hr />
-        <ReducerFormState /> */}
+        <ReducerFormState />
         <hr />
         <UseLayoutEffectHook />
         <hr />
