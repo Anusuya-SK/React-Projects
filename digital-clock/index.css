@@ -4,6 +4,9 @@
   padding: 50px 0;
   margin-bottom: 50px;
 }
+.container.greetings {
+  background-color: #dbffbe;
+}
 .container h1 {
   font-size: 60px;
 }
@@ -16,4 +19,9 @@
   font-size: 40px;
   color: #0087ff;
   font-style: italic;
+}
+
+.container img {
+  height: 150px;
+  width: 150px;
 }
