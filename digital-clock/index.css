@@ -11,3 +11,9 @@
   font-size: 48px;
   color: red;
 }
+
+.container p {
+  font-size: 40px;
+  color: #0087ff;
+  font-style: italic;
+}
