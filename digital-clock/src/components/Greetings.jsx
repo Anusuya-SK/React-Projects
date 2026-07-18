@@ -1,24 +1,20 @@
 import { useState } from "react";
 
-function DigitalClock() {
+function Greetings() {
   const currentTime = new Date().toLocaleTimeString();
   const [time, setTime] = useState(currentTime);
 
-  const update = () => {
+  setInterval(() => {
     const currentTime = new Date().toLocaleTimeString();
     setTime(currentTime);
-  };
-
-  setInterval(() => {
-    update();
   }, 1000);
 
   return (
     <div className="container">
-      <h1 className="title">Digital Clock</h1>
+      <h1>Greetings Section</h1>
       <h2>{time}</h2>
     </div>
   );
 }
 
-export default DigitalClock;
+export default Greetings;
